@@ -1,4 +1,4 @@
--- Tabela de Clientes
+-- Tabela de Clientes:
 	-- id_cliente: vai ser a PK, para identificar ele dentro da nossa tabela,
 	-- que vai ser incrementado automaticamente a cada inserção.
 	-- nome: não pode ser vazio, pois e um dado necessário para identificação dos
@@ -18,7 +18,7 @@ CREATE TABLE cliente (
     endereco CHAR(100) NOT NULL
 );
 
--- Tabela de Veículos
+-- Tabela de Veículos:
 	-- id_veiculo: vai ser a PK, para identificar cada veículo na tabela, sendo
 	-- incrementando automaticamente a cada inserção.
 	-- id_cliente_ref: campo que indica o id de quem é dono do veículo, no caso esse
@@ -45,7 +45,7 @@ CREATE TABLE veiculo (
     ano_fabricacao DATE NOT NULL
 );
 
--- Tabela de Serviços
+-- Tabela de Serviços:
 	-- id_servico: vai ser a PK, usada para identificar cada tipo de serviço oferecido.
 	-- nome: deve ser único e obrigatório, pois define o nome do serviço no catálogo.
 	-- descricao: detalha o serviço que vai ser realizado.
@@ -60,7 +60,7 @@ CREATE TABLE servico (
     preco DOUBLE NOT NULL CHECK (preco > 0)
 );
 
--- Tabela de Agendamentos
+-- Tabela de Agendamentos:
 	-- id_agendamento: vai ser a  PK, identificando cada agendamento na 
     -- tabela de agenda da oficina.
 	-- id_cliente_ref: referencia ao id do cliente que realizou o agendamento,
@@ -83,3 +83,12 @@ CREATE TABLE agendamento (
     observacao VARCHAR(255),
     finalizado BOOLEAN NOT NULL
 );
+
+-- Relações de Cardinalidade: 
+-- cliente 1:N veiculo: Um cliente pode possuir vários veículos, mas cada 
+-- veículo pertence a um único cliente.
+-- cliente 1:N agendamento: Um cliente pode realizar vários agendamentos, mas 
+-- cada agendamento pertence a um único cliente.
+-- veiculo 1:N agendamento: Um veículo pode ter vários agendamentos, mas cada 
+-- agendamento está associado a um único veículo.
+-- servico 1:N agendamento: Um serviço pode ser executado em vários agendamentos, mas cada agendamento se refere a um único serviço.

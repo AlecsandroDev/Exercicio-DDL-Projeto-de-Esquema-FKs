@@ -53,3 +53,82 @@
 ---
 
 # DML e DQL - Manipulação e exbição dos dados
+## Tabela de Clientes
+
+### INSERTS
+* Adicionando clientes a nossa tabela cliente.
+
+### SELECTS
+Consultas para visualizar os registros da tabela cliente.
+* No primeiro caso, exibe toda a tabela.
+* No segundo, exibe o nome e CPF do cliente caso o seu id seja igual a 1.
+* No terceiro, exibe os clientes cujo nome começe com "Bruno".
+
+### UPDATES
+Atualizando alguns clientes quando uma condição for verdadeira.
+* No primeiro o telefone é atualizado caso o seu cpf seja igual a "43322964000".
+* No segundo o endereço é atualizado caso o seu id seja igual a 2.
+* No terceiro o nome é alterado para "Carla Dias Souza" caso se o nome for igual a "Carla Dias".
+
+### DELETE
+* Deletando o cliente quando o seu id for igual a 3.
+
+## Tabela de Veículos
+
+### INSERTS
+* Adicionando veículos à tabela veiculo.
+
+### SELECTS
+Consultas para visualizar os registros da tabela veiculo.
+* No primeiro caso, exibe todos os veículos cadastrados.
+* No segundo, exibe placa, marca e modelo dos veículos caso o seu id do cliente seja igual a 1.
+* No terceiro, exibe o veículo caso a placa seja igual a "JPU4750".
+
+### UPDATES
+Atualizando informações dos veículos quando as condições são verdadeiras.
+* O primeiro altera a cor do veículo caso o seu id seja igual a 1.
+* O segundo altera o modelo do veículo caso o a placa seja igual a "JPU4750".
+* O terceiro altera o ano de fabricação do veículo caso o seu id seja igual a 3.
+
+### DELETE
+* Deletando um veiculo caso o seu id seja igual a 3.
+
+## Tabela de Serviços
+
+### INSERTS
+* Adicionando serviços à tabela servico.
+
+### SELECTS
+Exibindo registros da tabela servico.
+* O primeiro irá exibir todos os serviços que estão cadastrados.
+* O segundo irá mostrar o nome e preço dos serviços caso o valor seja acima de 130.
+* O terceiro irá mostrar o serviço quando o nome for igual a “Alinhamento e Balanceamento”.
+
+### UPDATES
+Atualizando registros da tabela servico.
+* O primeiro altera o preço caso o seu o nome seja igual a "Troca de Óleo e Filtro".
+* O segundo altera a descrição do serviço caso o seu id seja igual a 2.
+* O terceiro ajusta a duração do serviço caso o seu id seja igual a 3.
+
+### DELETE
+* Deletando um servico caso o seu id seja igual a 3.
+
+## Tabela de Agendamentos
+
+### INSERTS
+* Adicionando novos agendamentos à tabela agendamento.
+
+### SELECTS
+Consultas para visualizar os agendamentos.
+* O primeiro irá exibir todos os agendamentos.
+* O segundo vai mostrar os agendamentos caso sejam do dia 23/10/2025, e irá ordená-los por hora.
+* O terceiro exibe os agendamentos que ainda não foram finalizados.
+
+### UPDATES
+Atualizando agendamentos existentes.
+* O primeiro marca o agendamento concluído caso o id seja igual a 1.
+* O segundo altera o horário e adiciona observações no agendamento caso o id seja igual a 2.
+* O terceiro muda a data do agendamento caso o id seja igual a 3.
+
+### DELETE
+* Deletando um agendamento caso o seu id seja igual a 3.

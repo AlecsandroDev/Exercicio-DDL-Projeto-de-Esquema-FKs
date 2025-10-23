@@ -1,4 +1,10 @@
 # DDL - Criação das tabelas
+## Integrantes:
+### - Alecsandro Costa Santos | 1986042 | 4°BCC - C
+### - Rafael Ribeiro dos Santos | 2000630 | 4°BCC - C
+
+---
+
 ## Tabela de Clientes:
 
 - **id_cliente**: vai ser a PK, para identificar o cliente dentro da nossa tabela, sendo incrementado automaticamente a cada inserção.  
